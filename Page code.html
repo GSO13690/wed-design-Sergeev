@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+    <link rel="icon" href="https://sb.bsu.by/Data/favicon.ico" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #46868c;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: auto;
+  background: #cf9988;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: auto;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #FFB6C1;
+  padding: 23px;
+  text-align: center;
+  color: black;
+  text-format: 
+}
+
+dt {
+font-weight:bold;
+font-size:larger;}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: auto;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Sergeev Lab 1 Questions</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#1">a.	When HTML5 has become a standard?</a></li>
+      <li><a href="#2">b.	What is a difference between W3C HTML5 and WHATWG HTML Living Standard?</a></li>
+      <li><a href="#3">c.	What is the minimal HTML page code?</a></li>
+	  <li><a href="#4">d.	Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</a></li>
+      <li><a href="#5">e.	How you can check browser support for particular tag or attribute?</a></li>
+      <li><a href="#6">f.	What are the audio and video formats, officially supported by HTML standard? What happens if you use other format?
+
+</a></li>
+    </ul>
+  </nav>
+<article>
+<dl id="1">
+<dt> When HTML5 has become a standard? </dt>
+<dd> HTML5 was first released in a public-facing form on 22 January 2008, with a major update and “W3C Recommendation” status in October 2014.
+HTML5 is the latest version of the HTML standard, which defines the structure and semantics of web pages. HTML5 introduces new features and elements, such as multimedia support, semantic markup, offline storage, and APIs. HTML5 is designed to be backward compatible with previous versions of HTML,
+ and to work across different browsers and devices.  </dd>
+<br>
+<dl id="2">
+<dt> What is a difference between W3C HTML5 and WHATWG HTML Living Standard? </dt>
+<dd> The difference between W3C HTML5 and WHATWG HTML Living Standard is that the former is a fixed version of the HTML specification, while the latter is a continuously evolving document that reflects the current state of the web.
+The W3C HTML5 specification was finalized in 2014 and is now being followed by HTML5.1 </dd>
+<br>
+<dl id="3">
+<dt>What is the minimal HTML page code?</dt>
+<dd>  The minimal HTML page code is the smallest possible HTML document that still validates as HTML5.</dd>
+<br>
+<dl id="4">
+<dt>Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</dt>
+<dd> Semantic markup is the subset of HTML that describes the content and structure of a document, whereas presentational markup is the subset of HTML that is used to determine the appearance of the document.
+ Semantic markup is important for accessibility, search engine optimization, and making use of the built-in features browsers provide for content to work optimally2. Presentational markup, on the other hand, is considered deprecated because it mixes content with presentation, making the code less maintainable, readable, and semantic3. Presentational markup also violates the principle of separation of concerns, which states that HTML should only be used for structure, CSS for presentation, and JavaScript for behavior.
+ Therefore, presentational markup should be avoided and replaced with semantic markup and CSS whenever possible. </dd>
+<br>
+<dl id="5">
+<dt>How you can check browser support for particular tag or attribute?</dt>
+<dd> There are different ways to check browser support for a particular HTML tag or attribute. One way is to use a reference website like W3Schools or Can I use, which provide tables of browser compatibility for various HTML features. Another way is to use a JavaScript library like Modernizr, which can detect the availability of specific HTML features in the user’s browser. A third way is to use a conditional comment, which is a special syntax that only certain browsers can interpret. </dd>
+<br>
+<dl id="6">
+<dt>What are the audio and video formats, officially supported by HTML standard? What happens if you use other format?
+</dt>
+<dd> The HTML standard officially supports the following audio and video formats:
+
+Audio: MP3, WAV, and OGG
+Video: MP4, WebM, and OGG
+These formats are supported by the "audio" and "video" elements, which allow you to embed audio and video files on a web page without requiring plug-ins12.
+
+If you use other formats, such as WMA, AAC, or FLV, the browser may not be able to play them, or it may require a plug-in or an external player. Different browsers may also have different levels of support for different formats, so it is recommended to provide multiple sources with different formats for the same media file. 
+<br>
+  <video width="320" height="240" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+
+</video> </dd>
+  </article>
+
+
+
+
+</section>
+
+<footer>
+<h2>Coding is very very fun and you should try that someday. Or not. The task was very interesting and intiutive anyway.</h2>
+<img src="logo (1).png">
+</footer>
+
+</body>
+</html>
